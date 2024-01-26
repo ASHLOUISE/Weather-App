@@ -47,6 +47,6 @@ The screenshot demostrates the web application's apperarance.
 
 ## Links
 
-*Live URL: 
+*Live URL: https://ashlouise.github.io/Weather-App/
 *GitHub: https://github.com/ASHLOUISE/Weather-App.git
 
