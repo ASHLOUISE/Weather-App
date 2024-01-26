@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -11,9 +9,14 @@
 }
 
 body{
-    background: url() no-repeat center center fixed;
+    background: rgb(243, 233, 216);
+    background-image: url('./quino-al-mBQIfKlvowM-unsplash.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 h1{
     color: white;
@@ -29,9 +32,7 @@ h1{
     padding: 30px;
 }
 
-.weather-input {
-    width: 550px;
-}
+
 
 .weather-input input {
     width: 100%;
@@ -42,6 +43,24 @@ h1{
     font-size: 1.07rem;
     border-radius: 4px;
     border: 1px solid #ccc;
+}
+
+.search-history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-history-list li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: rgb(136, 114, 235);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.07rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .weather-input .separator {
@@ -55,17 +74,16 @@ h1{
 }
 
 .weather-input .separator::before {
-    content: "or";
-    color: black;
-    font-size: 1.18rem;
-    padding: 0 15px;
-    margin-top: -4px;
-    background: rgb(243, 233, 216);
-    
+    background: none;
+    color: #666;
+    font-size: 1rem;
+    padding: 0;
 }
 
-.weather-input button {
+.weather-input button, 
+.weather-input .location-btn {
     width: 100%;
+    margin-bottom: 5px;
     padding: 10px 0;
     cursor: pointer;
     outline: none;
@@ -73,7 +91,7 @@ h1{
     color: #fff;
     font-size: 1rem;
     border-radius: 4px;
-    background: rgb(136, 114, 235);
+    background: rgb(118, 81, 218);
 }
 
 .weather-input .location-btn {
@@ -85,6 +103,7 @@ h1{
 }
 
 .current-weather {
+    margin-right: 950px;
     color: #fff;
     display: flex;
     border-radius: 5px;
@@ -101,6 +120,10 @@ h1{
     margin-top: 12px;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.current-weather .icon {
+    text-align: center;
 }
 
 .current-weather .icon img {
@@ -164,6 +187,7 @@ h1{
     }
 }
 
+
 @media (max-width: 750px) {
     .container {
         flex-wrap: wrap;
@@ -173,12 +197,3 @@ h1{
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
